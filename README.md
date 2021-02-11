@@ -1,1 +1,1 @@
-# teacher_journal
+# University Journal
