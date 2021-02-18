@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Учеба\\Journal\\Journal\\Journal.csproj": {}
+    "D:\\vs\\Journal\\Journal.csproj": {}
   },
   "projects": {
-    "D:\\Учеба\\Journal\\Journal\\Journal.csproj": {
+    "D:\\vs\\Journal\\Journal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Учеба\\Journal\\Journal\\Journal.csproj",
+        "projectUniqueName": "D:\\vs\\Journal\\Journal.csproj",
         "projectName": "Journal",
-        "projectPath": "D:\\Учеба\\Journal\\Journal\\Journal.csproj",
-        "packagesPath": "C:\\Users\\Zemelin\\.nuget\\packages\\",
-        "outputPath": "D:\\Учеба\\Journal\\Journal\\obj\\",
+        "projectPath": "D:\\vs\\Journal\\Journal.csproj",
+        "packagesPath": "C:\\Users\\Obvil1oUs\\.nuget\\packages\\",
+        "outputPath": "D:\\vs\\Journal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Zemelin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Obvil1oUs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,9 +44,19 @@
               "target": "Package",
               "version": "[5.0.3, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [

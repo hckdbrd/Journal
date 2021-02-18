@@ -6,10 +6,14 @@ using System.Text;
 
 namespace Journal.Data
 {
-    class ApplicationDbContext: DbContext 
+    public class ApplicationDbContext: DbContext 
     {
-        DbSet<Group> Groups { get; set; }
-        DbSet<Student> Students { get; set; }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
+            {
+
+        }
+        public DbSet<Group> Groups { get; set; }
+        public DbSet<Student> Students { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

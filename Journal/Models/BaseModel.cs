@@ -1,8 +1,11 @@
-﻿namespace Journal.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Journal.Models
 {
     public abstract class BaseModel
     {
-        int Id { get; set; }
+        [Key]
+        public int Id { get; set; }
 
     }
 }
