@@ -149,3 +149,4 @@ D:\vs\Journal\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.
 D:\vs\Journal\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\vs\Journal\bin\Debug\netcoreapp3.1\Humanizer.dll
 D:\vs\Journal\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\vs\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Students.cshtml.g.cs
