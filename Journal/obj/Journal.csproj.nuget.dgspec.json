@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\vs\\Journal\\Journal.csproj": {}
+    "D:\\Media\\Documents\\University\\C#\\Diploma\\Journal\\Journal.csproj": {}
   },
   "projects": {
-    "D:\\vs\\Journal\\Journal.csproj": {
+    "D:\\Media\\Documents\\University\\C#\\Diploma\\Journal\\Journal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\vs\\Journal\\Journal.csproj",
+        "projectUniqueName": "D:\\Media\\Documents\\University\\C#\\Diploma\\Journal\\Journal.csproj",
         "projectName": "Journal",
-        "projectPath": "D:\\vs\\Journal\\Journal.csproj",
-        "packagesPath": "C:\\Users\\Obvil1oUs\\.nuget\\packages\\",
-        "outputPath": "D:\\vs\\Journal\\obj\\",
+        "projectPath": "D:\\Media\\Documents\\University\\C#\\Diploma\\Journal\\Journal.csproj",
+        "packagesPath": "C:\\Users\\pullover\\.nuget\\packages\\",
+        "outputPath": "D:\\Media\\Documents\\University\\C#\\Diploma\\Journal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Obvil1oUs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pullover\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
