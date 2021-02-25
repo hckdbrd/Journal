@@ -6,7 +6,7 @@ namespace Journal.Models
     public class Teacher : User
     {
         public string ScienceDegree { get; set; }
-        public IEnumerable<Journal> Journals { get; set; }
+        //public IEnumerable<Journal> Journals { get; set; }
 
         public IEnumerable<Group> Groups { get; set; }
 

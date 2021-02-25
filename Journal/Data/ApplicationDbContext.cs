@@ -14,6 +14,10 @@ namespace Journal.Data
         }
         public DbSet<Group> Groups { get; set; }
         public DbSet<Student> Students { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Journal.Models.Journal> Journals { get; set; }
+        public DbSet<Class> Classes { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -28,10 +32,11 @@ namespace Journal.Data
                 .WithOne(c => c.Subject)
                 .HasForeignKey(c => c.SubjectId);
 
-            builder.Entity<Teacher>()
-                .HasMany(t => t.Journals)
-                .WithOne(j => j.Teacher)
-                .HasForeignKey(j => j.TeacherId);
+            //builder.Entity<Teacher>()
+            //    .HasMany(t => t.Journals)
+            //    .WithOne(j => j.Teacher)
+            //    .OnDelete(DeleteBehavior.NoAction);
+
 
             builder.Entity<Class>()
                .HasMany(c => c.Journals)

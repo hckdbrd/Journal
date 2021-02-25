@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sIpSeluXjpMDFX2CrqJoRZRm4DqTOUjz2D1mr0l7ATZtE54+vpLLy6mdF0zvat1REHUV9lPOLRYXIbsahyg/bQ==",
+  "dgSpecHash": "jFqXV6aNBo0u1ziOGZB/C+6ZVf/q5AnBojbAB1ATRnoqV55lsy0R0rZF/bcY2WlJXzpDgujI4p6y+OW62EbBcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Zemelin\\Source\\Repos\\Journal\\Journal\\Journal.csproj",
+  "projectFilePath": "C:\\Users\\Zemelin\\source\\repos\\Journal\\Journal\\Journal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Zemelin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Zemelin\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -24,6 +24,7 @@
     "C:\\Users\\Zemelin\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.3\\microsoft.entityframeworkcore.design.5.0.3.nupkg.sha512",
     "C:\\Users\\Zemelin\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.3\\microsoft.entityframeworkcore.relational.5.0.3.nupkg.sha512",
     "C:\\Users\\Zemelin\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.3\\microsoft.entityframeworkcore.sqlserver.5.0.3.nupkg.sha512",
+    "C:\\Users\\Zemelin\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.3\\microsoft.entityframeworkcore.tools.5.0.3.nupkg.sha512",
     "C:\\Users\\Zemelin\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Zemelin\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\Zemelin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

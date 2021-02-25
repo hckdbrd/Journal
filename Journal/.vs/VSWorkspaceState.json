@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers",
+    "\\Data"
   ],
+  "SelectedNode": "\\Journal.csproj",
   "PreviewInSolutionExplorer": false
 }
