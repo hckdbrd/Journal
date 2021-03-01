@@ -42,5 +42,13 @@ namespace Journal.Controllers
             var Students = _db.Students.ToList();
             return View(Students);
         }
+
+        public IActionResult Groups()
+        {
+            var Groups = _db.Groups.ToList();
+            return View(Groups);
+        }
+
+        
     }
 }
