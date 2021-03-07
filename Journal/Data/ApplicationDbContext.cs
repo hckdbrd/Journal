@@ -18,6 +18,7 @@ namespace Journal.Data
         public DbSet<Journal.Models.Journal> Journals { get; set; }
         public DbSet<Class> Classes { get; set; }
         public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Specialization> Specializations { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -25,7 +26,7 @@ namespace Journal.Data
             builder.Entity<Student>()
                 .HasOne(s => s.Group)
                 .WithMany(g => g.Students)
-                .HasForeignKey(g => g.StudentId);
+                .HasForeignKey(s => s.GroupId);
 
             builder.Entity<Subject>()
                 .HasMany(s => s.Classes)

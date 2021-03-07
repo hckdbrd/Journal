@@ -289,7 +289,6 @@ D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Journal
 D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Journal.RazorCoreGenerate.cache
 D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Students.cshtml.g.cs
 D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -607,3 +606,6 @@ D:\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.dll
 D:\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.pdb
 D:\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.genruntimeconfig.cache
 D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Groups.cshtml.g.cs
+D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Groups.cshtml.g.cs
+D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Student\Index.cshtml.g.cs
+D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Student\Create.cshtml.g.cs

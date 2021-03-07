@@ -1,11 +1,12 @@
-﻿@using Journal.Models 
+﻿@using Journal.Models
+
 @model IEnumerable<Student>
 
 @{
-    ViewData["Title"] = "Students";
+    ViewData["Title"] = "Index";
 }
 
-<h1>Students</h1>
+<h1>Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -15,6 +16,9 @@
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.YearOfEntry)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Specialization)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.GroupId)
@@ -36,6 +40,9 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.YearOfEntry)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Specialization.Id)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.GroupId)
