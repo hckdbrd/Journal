@@ -4,14 +4,16 @@ using Journal.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Journal.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210311071714_0917")]
+    partial class _0917
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,7 +48,7 @@ namespace Journal.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("TeacherId")
+                    b.Property<int>("TeacherId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -123,11 +125,11 @@ namespace Journal.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("SpecializationId")
+                    b.Property<int>("SpecializationId")
                         .HasColumnType("int");
 
-                    b.Property<int>("YearOfEntry")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("YearOfEntry")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -198,7 +200,9 @@ namespace Journal.Migrations
                 {
                     b.HasOne("Journal.Models.Teacher", "Teacher")
                         .WithMany("Groups")
-                        .HasForeignKey("TeacherId");
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Teacher");
                 });
@@ -238,7 +242,9 @@ namespace Journal.Migrations
 
                     b.HasOne("Journal.Models.Specialization", "Specialization")
                         .WithMany("Students")
-                        .HasForeignKey("SpecializationId");
+                        .HasForeignKey("SpecializationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Group");
 

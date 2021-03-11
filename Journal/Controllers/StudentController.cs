@@ -1,4 +1,5 @@
 ﻿using Journal.Data;
+using Journal.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -44,6 +45,18 @@ namespace Journal.Controllers
                 .ToListAsync();
 
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(Student student)
+        {
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction(nameof(Create));
+            }
+            await _db.Students.AddAsync(student);
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
     }
 }

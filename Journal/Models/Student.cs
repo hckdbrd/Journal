@@ -7,7 +7,7 @@ namespace Journal.Models
     {
         public DateTime YearOfEntry { get; set; }
         public Specialization Specialization { get; set; }
-        public int SpecializationId { get; set; }
+        public int? SpecializationId { get; set; }
         //public int StudentId { get; set; }
 
         public int GroupId { get; set; }
