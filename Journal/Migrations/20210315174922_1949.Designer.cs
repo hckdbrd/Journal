@@ -4,14 +4,16 @@ using Journal.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Journal.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210315174922_1949")]
+    partial class _1949
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -125,7 +127,7 @@ namespace Journal.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SpecializationId")
+                    b.Property<int?>("SpecializationId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("YearOfEntry")
@@ -242,9 +244,7 @@ namespace Journal.Migrations
 
                     b.HasOne("Journal.Models.Specialization", "Specialization")
                         .WithMany("Students")
-                        .HasForeignKey("SpecializationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("SpecializationId");
 
                     b.Navigation("Group");
 

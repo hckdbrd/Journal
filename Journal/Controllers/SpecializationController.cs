@@ -18,8 +18,8 @@ namespace Journal.Controllers
         }
         public async Task <IActionResult> Index()
         {
-            var Specialization = await _db.Specializations.ToListAsync();
-            return View(Specialization);
+            var Specializations = await _db.Specializations.ToListAsync();
+            return View(Specializations);
         }
         public IActionResult Create()
         {
