@@ -440,7 +440,6 @@ C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.Ta
 C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.RazorCoreGenerate.cache
 C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Students.cshtml.g.cs
 C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -765,3 +764,10 @@ C:\Users\Zemelin\source\repos\Journal\Journal\Journal\obj\Debug\netcoreapp3.1\Jo
 C:\Users\Zemelin\source\repos\Journal\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.genruntimeconfig.cache
 C:\Users\Zemelin\source\repos\Journal\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Group\Index.cshtml.g.cs
 C:\Users\Zemelin\source\repos\Journal\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Group\Create.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Group\Create.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Group\Index.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Groups.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Student\Create.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Student\Index.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Specialization\Index.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Specialization\Create.cshtml.g.cs

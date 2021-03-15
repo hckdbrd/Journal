@@ -24,7 +24,7 @@ namespace Journal.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var Students = await _db.Students.ToListAsync();
+            var Students = await _db.Students.Include(s=>s.Group).ToListAsync();
             return View(Students);
         }
 
@@ -49,7 +49,7 @@ namespace Journal.Controllers
 
         [HttpPost]
         public async Task<IActionResult> Create(Student student)
-        {
+         {
             if (!ModelState.IsValid)
             {
                 return RedirectToAction(nameof(Create));

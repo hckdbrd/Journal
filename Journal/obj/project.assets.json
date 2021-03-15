@@ -8607,11 +8607,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zemelin\\source\\repos\\Journal\\Journal\\Journal\\Journal.csproj",
+      "projectUniqueName": "C:\\Users\\Zemelin\\Source\\Repos\\Journal\\Journal\\Journal.csproj",
       "projectName": "Journal",
-      "projectPath": "C:\\Users\\Zemelin\\source\\repos\\Journal\\Journal\\Journal\\Journal.csproj",
+      "projectPath": "C:\\Users\\Zemelin\\Source\\Repos\\Journal\\Journal\\Journal.csproj",
       "packagesPath": "C:\\Users\\Zemelin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zemelin\\source\\repos\\Journal\\Journal\\Journal\\obj\\",
+      "outputPath": "C:\\Users\\Zemelin\\Source\\Repos\\Journal\\Journal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\"

@@ -10,7 +10,7 @@ namespace Journal.Migrations
             migrationBuilder.AlterColumn<int>(
                 name: "YearOfEntry",
                 table: "Students",
-                type: "int",
+                type: "datetime2",
                 nullable: false,
                 oldClrType: typeof(DateTime),
                 oldType: "datetime2");
@@ -24,7 +24,7 @@ namespace Journal.Migrations
                 type: "datetime2",
                 nullable: false,
                 oldClrType: typeof(int),
-                oldType: "int");
+                oldType: "datetime2");
         }
     }
 }
