@@ -24,20 +24,25 @@ namespace Journal.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var Students = await _db.Students.Include(s=>s.Group).ToListAsync();
+            var Students = await _db.Students
+                .Include(s => s.Group)
+                .ThenInclude(g=>g.Teacher)
+                .Include(s => s.Specialization)
+                .ToListAsync();
             return View(Students);
         }
+       
 
         public async Task<IActionResult> Create()
         {
-            ViewBag.SpecializationId = await _db.Specializations.Select(s => new SelectListItem()
+            ViewBag.Specialization = await _db.Specializations.Select(s => new SelectListItem()
             {
                 Text = s.Name,
                 Value = s.Id.ToString()
             })
                 .ToListAsync();
 
-            ViewBag.GroupId = await _db.Groups.Select(g => new SelectListItem()
+            ViewBag.Group = await _db.Groups.Select(g => new SelectListItem()
             {
                 Text = g.Name,
                 Value = g.Id.ToString()

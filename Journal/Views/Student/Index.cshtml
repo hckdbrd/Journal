@@ -32,6 +32,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.LastName)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Group.Teacher.FirstName)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -42,7 +45,7 @@
                 @Html.DisplayFor(modelItem => item.YearOfEntry)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.SpecializationId)
+                @Html.DisplayFor(modelItem => item.Specialization.Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.GroupId)
@@ -55,6 +58,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Group.Teacher.FirstName)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
