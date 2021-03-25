@@ -591,7 +591,6 @@ D:\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.TagHelpers.output.cache
 D:\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.RazorCoreGenerate.cache
 D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Students.cshtml.g.cs
 D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -776,3 +775,14 @@ D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\V
 D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Specialization\Create.cshtml.g.cs
 D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Specialization\Index.cshtml.g.cs
 D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Index.cshtml.g.cs
+D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Group\Create.cshtml.g.cs
+D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Group\Index.cshtml.g.cs
+D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Specialization\Create.cshtml.g.cs
+D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Specialization\Index.cshtml.g.cs
+D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Student\Create.cshtml.g.cs
+D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Student\Index.cshtml.g.cs
+D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Index.cshtml.g.cs
+D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Subject\Index.cshtml.g.cs
+D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Subject\Create.cshtml.g.cs
+D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Class\Index.cshtml.g.cs
+D:\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Class\Create.cshtml.g.cs
