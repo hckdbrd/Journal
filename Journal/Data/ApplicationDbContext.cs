@@ -19,6 +19,7 @@ namespace Journal.Data
         public DbSet<Class> Classes { get; set; }
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Specialization> Specializations { get; set; }
+        public DbSet<TeacherJournal> TeachersJournals { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -33,10 +34,17 @@ namespace Journal.Data
                 .WithOne(c => c.Subject)
                 .HasForeignKey(c => c.SubjectId);
 
-            //builder.Entity<Teacher>()
-            //    .HasMany(t => t.Journals)
-            //    .WithOne(j => j.Teacher)
-            //    .OnDelete(DeleteBehavior.NoAction);
+            //The next 3 builders - ManyToMany
+            builder.Entity<TeacherJournal>()
+                .HasKey(tj => new { tj.JournalId, tj.TeacherId });
+
+            builder.Entity<TeacherJournal>()
+                .HasOne(tj => tj.Teacher)
+                .WithMany(t => t.TeachersJournals);
+
+            builder.Entity<TeacherJournal>()
+                .HasOne(tj => tj.Journal)
+                .WithMany(j => j.TeachersJournals);
 
 
             builder.Entity<Class>()

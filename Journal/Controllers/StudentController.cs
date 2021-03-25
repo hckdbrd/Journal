@@ -26,7 +26,7 @@ namespace Journal.Controllers
         {
             var Students = await _db.Students
                 .Include(s => s.Group)
-                .ThenInclude(g=>g.Teacher)
+                .ThenInclude(g => g.Teacher)
                 .Include(s => s.Specialization)
                 .ToListAsync();
             return View(Students);

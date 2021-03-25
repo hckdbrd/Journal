@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Journal\\Journal\\Journal.csproj": {}
+    "D:\\Media\\Documents\\University\\C#\\Diploma\\Journal\\Journal.csproj": {}
   },
   "projects": {
-    "D:\\Journal\\Journal\\Journal.csproj": {
+    "D:\\Media\\Documents\\University\\C#\\Diploma\\Journal\\Journal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Journal\\Journal\\Journal.csproj",
+        "projectUniqueName": "D:\\Media\\Documents\\University\\C#\\Diploma\\Journal\\Journal.csproj",
         "projectName": "Journal",
-        "projectPath": "D:\\Journal\\Journal\\Journal.csproj",
-        "packagesPath": "C:\\Users\\anoni\\.nuget\\packages\\",
-        "outputPath": "D:\\Journal\\Journal\\obj\\",
+        "projectPath": "D:\\Media\\Documents\\University\\C#\\Diploma\\Journal\\Journal.csproj",
+        "packagesPath": "C:\\Users\\pullover\\.nuget\\packages\\",
+        "outputPath": "D:\\Media\\Documents\\University\\C#\\Diploma\\Journal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\anoni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pullover\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

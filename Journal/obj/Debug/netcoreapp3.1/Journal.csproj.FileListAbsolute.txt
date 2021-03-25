@@ -771,3 +771,8 @@ C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Student\Index.cshtml.g.cs
 C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Specialization\Index.cshtml.g.cs
 C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Specialization\Create.cshtml.g.cs
+D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Group\Create.cshtml.g.cs
+D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Group\Index.cshtml.g.cs
+D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Specialization\Create.cshtml.g.cs
+D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Specialization\Index.cshtml.g.cs
+D:\Media\Documents\University\C#\Diploma\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Index.cshtml.g.cs

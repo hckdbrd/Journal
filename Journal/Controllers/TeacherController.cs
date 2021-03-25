@@ -9,33 +9,37 @@ using System.Threading.Tasks;
 
 namespace Journal.Controllers
 {
-    public class GroupController : Controller
+    public class TeacherController : Controller
     {
         private readonly ApplicationDbContext _db;
-        public GroupController(ApplicationDbContext db)
+        public TeacherController(ApplicationDbContext db)
         {
             _db = db;
         }
 
         public async Task<IActionResult> Index()
         {
-            var groups = await _db.Groups.ToListAsync();
-            return View(groups);
+            var teachers = await _db.Teachers.ToListAsync();
+            return View(teachers);
         }
-        
+
         public IActionResult Create()
         {
+            //ViewBag.Teacher = await _db.Teachers.
             return View();
         }
+
+
+
         [HttpPost]
-        public async Task<IActionResult> Create(Group group)
+        public async Task<IActionResult> Create(Teacher teacher)
         {
             if (!ModelState.IsValid)
             {
                 return RedirectToAction(nameof(Create));
             }
 
-            await _db.Groups.AddAsync(group);
+            await _db.Teachers.AddAsync(teacher);
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

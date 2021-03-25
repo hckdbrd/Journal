@@ -1,41 +1,38 @@
 ﻿using Journal.Data;
-using Journal.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Journal.Controllers
 {
-    public class GroupController : Controller
+    public class JournalController : Controller
     {
         private readonly ApplicationDbContext _db;
-        public GroupController(ApplicationDbContext db)
+        public JournalController(ApplicationDbContext db)
         {
             _db = db;
         }
 
         public async Task<IActionResult> Index()
         {
-            var groups = await _db.Groups.ToListAsync();
-            return View(groups);
+            var journals = await _db.Teachers.ToListAsync();
+            return View(journals);
         }
-        
+
         public IActionResult Create()
         {
             return View();
         }
+
         [HttpPost]
-        public async Task<IActionResult> Create(Group group)
+        public async Task<IActionResult> Create(Journal.Models.Journal journal)
         {
             if (!ModelState.IsValid)
             {
                 return RedirectToAction(nameof(Create));
             }
 
-            await _db.Groups.AddAsync(group);
+            await _db.Journals.AddAsync(journal);
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
