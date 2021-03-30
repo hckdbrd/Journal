@@ -40,5 +40,9 @@ namespace Journal.Controllers
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        public async Task<IActionResult> Edit()
+        {
+            return Ok();
+        }
     }
 }
