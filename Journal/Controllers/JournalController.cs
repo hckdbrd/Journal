@@ -15,7 +15,7 @@ namespace Journal.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var journals = await _db.Teachers.ToListAsync();
+            var journals = await _db.Journals.ToListAsync();
             return View(journals);
         }
 

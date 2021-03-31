@@ -1,5 +1,5 @@
 ﻿@using Journal.Models
-@model Class
+@model TeacherJournal
 
 @{
     ViewData["Title"] = "Create";
@@ -7,20 +7,19 @@
 
 <h1>Create</h1>
 
-<h4>Class</h4>
+<h4>TeacherJournal</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Subject" class="control-label"></label>
-                <select asp-for="Subject" class="form-control" asp-items="ViewBag.Subject"></select>
+                <label asp-for="TeacherId" class="control-label"></label>
+                <select asp-for="TeacherId" class="form-control" asp-items="ViewBag.TeacherId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="SubjectType" class="control-label"></label>
-                @*<select asp-for="SubjectType" class="form-control" asp-items="Html.GetEnumSelectList<SubjectTypes>()"></select>*@
-                <select asp-for="SubjectType" class="form-control" asp-items="Html.GetEnumSelectList<SubjectTypes>()"></select>
+                <label asp-for="JournalId" class="control-label"></label>
+                <select asp-for="JournalId" class="form-control" asp-items="ViewBag.JournalId"></select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

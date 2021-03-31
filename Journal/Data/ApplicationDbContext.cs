@@ -9,7 +9,7 @@ namespace Journal.Data
     public class ApplicationDbContext: DbContext 
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
-            {
+        {
 
         }
         public DbSet<Group> Groups { get; set; }
@@ -20,6 +20,7 @@ namespace Journal.Data
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Specialization> Specializations { get; set; }
         public DbSet<TeacherJournal> TeachersJournals { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -40,11 +41,14 @@ namespace Journal.Data
 
             builder.Entity<TeacherJournal>()
                 .HasOne(tj => tj.Teacher)
-                .WithMany(t => t.TeachersJournals);
+                .WithMany(t => t.TeachersJournals)
+                .HasForeignKey(tj => tj.TeacherId);
+
 
             builder.Entity<TeacherJournal>()
                 .HasOne(tj => tj.Journal)
-                .WithMany(j => j.TeachersJournals);
+                .WithMany(j => j.TeachersJournals)
+                .HasForeignKey(tj => tj.JournalId);
 
 
             builder.Entity<Class>()
@@ -54,7 +58,7 @@ namespace Journal.Data
 
             builder.Entity<Student>()
                 .HasMany(s => s.Journals)
-                .WithOne(j => j.Stundent)
+                .WithOne(j => j.Student)
                 .HasForeignKey(j => j.StudentId);
 
             builder.Entity<Specialization>()

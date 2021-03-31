@@ -78,7 +78,7 @@ namespace Journal.Migrations
                     b.Property<int>("StudentId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("TeacherId")
+                    b.Property<int>("TeacherId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -230,7 +230,7 @@ namespace Journal.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Journal.Models.Student", "Stundent")
+                    b.HasOne("Journal.Models.Student", "Student")
                         .WithMany("Journals")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -238,11 +238,13 @@ namespace Journal.Migrations
 
                     b.HasOne("Journal.Models.Teacher", "Teacher")
                         .WithMany()
-                        .HasForeignKey("TeacherId");
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Class");
 
-                    b.Navigation("Stundent");
+                    b.Navigation("Student");
 
                     b.Navigation("Teacher");
                 });

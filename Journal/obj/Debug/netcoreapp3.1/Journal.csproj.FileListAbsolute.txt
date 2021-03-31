@@ -1120,3 +1120,7 @@ D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Journal
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.dll
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.pdb
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.genruntimeconfig.cache
+D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\TeacherJournal\Index.cshtml.g.cs
+D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\TeacherJournal\Create.cshtml.g.cs
+D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Journal\Index.cshtml.g.cs
+D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Journal\Create.cshtml.g.cs

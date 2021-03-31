@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Journal.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210315183511_2035")]
-    partial class _2035
+    [Migration("20210331140943_0509")]
+    partial class _0509
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -80,7 +80,7 @@ namespace Journal.Migrations
                     b.Property<int>("StudentId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("TeacherId")
+                    b.Property<int>("TeacherId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -189,6 +189,21 @@ namespace Journal.Migrations
                     b.ToTable("Teachers");
                 });
 
+            modelBuilder.Entity("Journal.Models.TeacherJournal", b =>
+                {
+                    b.Property<int>("JournalId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("int");
+
+                    b.HasKey("JournalId", "TeacherId");
+
+                    b.HasIndex("TeacherId");
+
+                    b.ToTable("TeachersJournals");
+                });
+
             modelBuilder.Entity("Journal.Models.Class", b =>
                 {
                     b.HasOne("Journal.Models.Subject", "Subject")
@@ -217,7 +232,7 @@ namespace Journal.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Journal.Models.Student", "Stundent")
+                    b.HasOne("Journal.Models.Student", "Student")
                         .WithMany("Journals")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -225,11 +240,13 @@ namespace Journal.Migrations
 
                     b.HasOne("Journal.Models.Teacher", "Teacher")
                         .WithMany()
-                        .HasForeignKey("TeacherId");
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Class");
 
-                    b.Navigation("Stundent");
+                    b.Navigation("Student");
 
                     b.Navigation("Teacher");
                 });
@@ -253,6 +270,25 @@ namespace Journal.Migrations
                     b.Navigation("Specialization");
                 });
 
+            modelBuilder.Entity("Journal.Models.TeacherJournal", b =>
+                {
+                    b.HasOne("Journal.Models.Journal", "Journal")
+                        .WithMany("TeachersJournals")
+                        .HasForeignKey("JournalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Journal.Models.Teacher", "Teacher")
+                        .WithMany("TeachersJournals")
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Journal");
+
+                    b.Navigation("Teacher");
+                });
+
             modelBuilder.Entity("Journal.Models.Class", b =>
                 {
                     b.Navigation("Journals");
@@ -261,6 +297,11 @@ namespace Journal.Migrations
             modelBuilder.Entity("Journal.Models.Group", b =>
                 {
                     b.Navigation("Students");
+                });
+
+            modelBuilder.Entity("Journal.Models.Journal", b =>
+                {
+                    b.Navigation("TeachersJournals");
                 });
 
             modelBuilder.Entity("Journal.Models.Specialization", b =>
@@ -281,6 +322,8 @@ namespace Journal.Migrations
             modelBuilder.Entity("Journal.Models.Teacher", b =>
                 {
                     b.Navigation("Groups");
+
+                    b.Navigation("TeachersJournals");
                 });
 #pragma warning restore 612, 618
         }
