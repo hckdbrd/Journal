@@ -1,6 +1,7 @@
 ﻿using Journal.Data;
 using Journal.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,12 +21,15 @@ namespace Journal.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var classes = await _db.Classes.ToListAsync();
+            var classes = await _db.Classes
+                .Include( cl => cl.Subject)
+                .ToListAsync();
             return View(classes);
         }
 
         public IActionResult Create()
         {
+            ViewBag.SubjectId = new SelectList(_db.Subjects, "Id", nameof(Subject.Name));
             return View();
         }
         [HttpPost]

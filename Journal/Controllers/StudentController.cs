@@ -35,19 +35,9 @@ namespace Journal.Controllers
 
         public async Task<IActionResult> Create()
         {
-            ViewBag.Specialization = await _db.Specializations.Select(s => new SelectListItem()
-            {
-                Text = s.Name,
-                Value = s.Id.ToString()
-            })
-                .ToListAsync();
 
-            ViewBag.Group = await _db.Groups.Select(g => new SelectListItem()
-            {
-                Text = g.Name,
-                Value = g.Id.ToString()
-            })
-                .ToListAsync();
+            ViewBag.SpecializationId = new SelectList(_db.Specializations, "Id", nameof(Specialization.Name));
+            ViewBag.GroupId = new SelectList(_db.Groups, "Id", nameof(Group.Name));
 
             return View();
         }

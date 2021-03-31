@@ -1091,7 +1091,6 @@ D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Journal
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.TagHelpers.output.cache
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Journal.RazorCoreGenerate.cache
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Class\Create.cshtml.g.cs
-D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Class\Index.cshtml.g.cs
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Group\Create.cshtml.g.cs
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Group\Edit.cshtml.g.cs
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Group\Index.cshtml.g.cs
@@ -1124,3 +1123,4 @@ D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\V
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\TeacherJournal\Create.cshtml.g.cs
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Journal\Index.cshtml.g.cs
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Journal\Create.cshtml.g.cs
+D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Class\Index.cshtml.g.cs

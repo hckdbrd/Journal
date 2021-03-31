@@ -7,6 +7,7 @@ namespace Journal.Models
 {
     public class Class : BaseModel
     {
+        public string Name { get; set; }
         public Subject Subject { get; set; }
         public int SubjectId { get; set; }
         public SubjectTypes SubjectType;

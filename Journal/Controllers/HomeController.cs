@@ -37,11 +37,11 @@ namespace Journal.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult Groups()
-        {
-            var Groups = _db.Groups.ToList();
-            return View(Groups);
-        }
+        //public IActionResult Groups()
+        //{
+        //    var Groups = _db.Groups.ToList();
+        //    return View(Groups);
+        //}
 
         
     }
