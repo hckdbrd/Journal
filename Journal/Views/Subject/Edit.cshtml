@@ -1,0 +1,47 @@
+﻿@using Journal.Models
+@model Subject
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Subject</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PracticeHours" class="control-label"></label>
+                <input asp-for="PracticeHours" class="form-control" />
+                <span asp-validation-for="PracticeHours" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LaboratoryHours" class="control-label"></label>
+                <input asp-for="LaboratoryHours" class="form-control" />
+                <span asp-validation-for="LaboratoryHours" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TheoryHours" class="control-label"></label>
+                <input asp-for="TheoryHours" class="form-control" />
+                <span asp-validation-for="TheoryHours" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

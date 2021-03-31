@@ -1,4 +1,5 @@
 ﻿using Journal.Data;
+using Journal.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -47,6 +48,33 @@ namespace Journal.Controllers
             }
 
             await _db.Journals.AddAsync(journal);
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        public async Task<IActionResult> Edit(int Id)
+        {
+            var journal = await _db.Journals.FirstOrDefaultAsync(j => j.Id == Id);
+            ViewBag.JournalId = new SelectList(_db.Journals, "Id", nameof(Journal));
+            ViewBag.ClassId = new SelectList(_db.Classes, "Id", nameof(Class.Name));
+            ViewBag.StudentId = new SelectList(_db.Students, "Id", nameof(Student.LastName));
+            ViewBag.TeacherId = new SelectList(_db.Teachers, "Id", nameof(Teacher.LastName));
+            return View(journal);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(Journal.Models.Journal journal)
+        {
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction(nameof(Edit));
+            }
+            _db.Update(journal);
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        public async Task<IActionResult> Delete(int Id)
+        {
+            var journal = new Journal.Models.Journal { Id = Id };
+            _db.Entry(journal).State = EntityState.Deleted;
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

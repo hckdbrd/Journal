@@ -44,9 +44,35 @@ namespace Journal.Controllers
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        public async Task<IActionResult> Edit()
+        //public async Task<IActionResult> Edit()
+        //{
+        //    return Ok();
+        // }
+        public async Task<IActionResult> Edit(int Id)
         {
-            return Ok();
+            var classes = await _db.Classes.FirstOrDefaultAsync(g => g.Id == Id);
+            ViewBag.ClassId = new SelectList(_db.Classes, "Id", nameof(Class.Name));
+            ViewBag.SubjectId = new SelectList(_db.Subjects, "Id", nameof(Subject.Name));
+            return View(classes);
         }
+        [HttpPost]
+        public async Task<IActionResult> Edit(Teacher classes)
+        {
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction(nameof(Edit));
+            }
+            _db.Update(classes);
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        public async Task<IActionResult> Delete(int Id)
+        {
+            var classes = new Class { Id = Id };
+            _db.Entry(classes).State = EntityState.Deleted;
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }

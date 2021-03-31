@@ -1137,3 +1137,7 @@ C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Create.cshtml.g.cs
 C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Edit.cshtml.g.cs
 C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Index.cshtml.g.cs
+C:\Users\Zemelin\source\repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Student\Edit.cshtml.g.cs
+C:\Users\Zemelin\source\repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Journal\Edit.cshtml.g.cs
+C:\Users\Zemelin\source\repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Class\Edit.cshtml.g.cs
+C:\Users\Zemelin\source\repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Subject\Edit.cshtml.g.cs

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OPiQskOiAZx+1aOtJ4kpfhN4fFyNZ25HZAsHhlO81LRyKwLPbCRifM1JzGPoC0nIBeIwF94aSULGJ0Obv8g3rg==",
+  "dgSpecHash": "jFqXV6aNBo0u1ziOGZB/C+6ZVf/q5AnBojbAB1ATRnoqV55lsy0R0rZF/bcY2WlJXzpDgujI4p6y+OW62EbBcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Zemelin\\Source\\Repos\\Journal\\Journal\\Journal.csproj",
+  "projectFilePath": "C:\\Users\\Zemelin\\source\\repos\\Journal\\Journal\\Journal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Zemelin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Zemelin\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
