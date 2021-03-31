@@ -3,13 +3,13 @@
 @model IEnumerable<Student>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Студенты";
 }
 
-<h1>Index</h1>
+<h1>Студенты</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Добавить студента</a>
 </p>
 <table class="table">
     <thead>
@@ -19,9 +19,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Specialization)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GroupId)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Group)
@@ -48,9 +45,6 @@
                 @Html.DisplayFor(modelItem => item.Specialization.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.GroupId)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Group.Name)
             </td>
             <td>
@@ -63,9 +57,8 @@
                 @Html.DisplayFor(modelItem => item.Group.Teacher.LastName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                @*<a asp-action="Details" asp-route-id="@item.Id">Details</a> |*@
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
             </td>
         </tr>
 }

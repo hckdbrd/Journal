@@ -9,7 +9,6 @@ namespace Journal.Models
         [Display(Name = "Группа")]
         public string Name { get; set; }
         public int? TeacherId { get; set; }
-        [Required(ErrorMessage = "Введите Преподавателя")]
         [Display(Name = "Преподаватель")]
         public Teacher Teacher { get; set; }
         public IEnumerable <Student> Students { get; set; }

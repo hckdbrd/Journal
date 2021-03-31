@@ -5,9 +5,8 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Добавить занятие</h1>
 
-<h4>Class</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -23,17 +22,17 @@
                 <select asp-for="SubjectId" class="form-control" asp-items="ViewBag.SubjectId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="SubjectType" class="control-label"></label>
+                <label class="control-label">Тип Предмета</label>
                 <select asp-for="SubjectType" class="form-control" asp-items="Html.GetEnumSelectList<SubjectTypes>()"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Добавить" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Вернуться назад</a>
 </div>
 

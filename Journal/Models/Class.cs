@@ -13,6 +13,7 @@ namespace Journal.Models
         [Display(Name = "Предмет")]
         public Subject Subject { get; set; }
         public int SubjectId { get; set; }
+        [Display(Name = "Тип Предмета")]
         public SubjectTypes SubjectType;
         public IEnumerable<Journal> Journals { get; set; }
     }

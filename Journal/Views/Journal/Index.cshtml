@@ -5,10 +5,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Журнал</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Добавить оценку</a>
 </p>
 <table class="table">
     <thead>
@@ -18,6 +18,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Class)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Teacher.LastName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Student)
@@ -38,10 +41,13 @@
                 @Html.DisplayFor(modelItem => item.Date)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Class.Id)
+                @Html.DisplayFor(modelItem => item.Class.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Student.FirstName)
+                @Html.DisplayFor(modelItem => item.Teacher.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student.LastName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Presence)
@@ -50,9 +56,8 @@
                 @Html.DisplayFor(modelItem => item.Mark)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
             </td>
         </tr>
 }
