@@ -1124,3 +1124,16 @@ D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\V
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Journal\Index.cshtml.g.cs
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Journal\Create.cshtml.g.cs
 D:\Media\Documents\University\C#\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Class\Index.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Class\Create.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Class\Index.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Group\Edit.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Journal\Create.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Journal\Index.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Specialization\Edit.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Subject\Create.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Subject\Index.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\TeacherJournal\Create.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\TeacherJournal\Index.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Create.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Edit.cshtml.g.cs
+C:\Users\Zemelin\Source\Repos\Journal\Journal\obj\Debug\netcoreapp3.1\Razor\Views\Teacher\Index.cshtml.g.cs

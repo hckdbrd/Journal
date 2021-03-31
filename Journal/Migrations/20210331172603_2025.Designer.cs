@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Journal.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210331162352_0723")]
-    partial class _0723
+    [Migration("20210331172603_2025")]
+    partial class _2025
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

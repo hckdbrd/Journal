@@ -8601,20 +8601,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pullover\\.nuget\\packages\\": {}
+    "C:\\Users\\Zemelin\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Media\\Documents\\University\\C#\\Journal\\Journal\\Journal.csproj",
+      "projectUniqueName": "C:\\Users\\Zemelin\\Source\\Repos\\Journal\\Journal\\Journal.csproj",
       "projectName": "Journal",
-      "projectPath": "D:\\Media\\Documents\\University\\C#\\Journal\\Journal\\Journal.csproj",
-      "packagesPath": "C:\\Users\\pullover\\.nuget\\packages\\",
-      "outputPath": "D:\\Media\\Documents\\University\\C#\\Journal\\Journal\\obj\\",
+      "projectPath": "C:\\Users\\Zemelin\\Source\\Repos\\Journal\\Journal\\Journal.csproj",
+      "packagesPath": "C:\\Users\\Zemelin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Zemelin\\Source\\Repos\\Journal\\Journal\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\pullover\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Zemelin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8682,7 +8687,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
